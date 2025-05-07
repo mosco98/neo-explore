@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #000;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-sussie: var(--font-sussie);
+}
+
+@utility container {
+  padding-inline: 20px;
+  margin-inline: auto;
+
+  @variant sm {
+    padding-inline: 4rem;
+  }
+
+  @variant md {
+    padding-inline: 4rem;
+    max-width: 1440px;
+  }
+
+  @variant lg {
+    padding-inline: 4rem;
+  }
+
+  @variant xl {
+    padding-inline: 4rem;
+  }
+
+  @variant 2xl {
+    padding-inline: 4rem;
+    max-width: 1440px;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
