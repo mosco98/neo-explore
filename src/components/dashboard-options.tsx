@@ -79,7 +79,10 @@ const DashboardOptions = () => {
       <motion.div
         initial={false}
         animate={{ opacity: isAccountOpen ? 0 : 1 }}
-        transition={{ duration: 0.15 }}
+        transition={{
+          duration: isAccountOpen ? 0.15 : 0.4,
+          delay: !isAccountOpen ? 0.5 : 0
+        }}
         className="flex-1 flex justify-end"
       >
         <div className="w-fit">
