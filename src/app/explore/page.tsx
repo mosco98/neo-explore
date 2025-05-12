@@ -11,28 +11,28 @@ const ExplorePage = () => {
         <div className="flex items-center gap-4 mt-6 flex-wrap">
           <ConsultProviderCard
             id=""
-            img={"/provider.jpg"}
+            img={"/provider.webp"}
             name="Moses Enyinnaya"
             role="doctor"
           />
 
           <ConsultProviderCard
             id=""
-            img={"/provider.jpg"}
+            img={"/provider.webp"}
             name="Moses Enyinnaya"
             role="doctor"
           />
 
           <ConsultProviderCard
             id=""
-            img={"/provider.jpg"}
+            img={"/provider.webp"}
             name="Moses Enyinnaya"
             role="doctor"
           />
 
           <ConsultProviderCard
             id=""
-            img={"/provider.jpg"}
+            img={"/provider.webp"}
             name="Moses Enyinnaya"
             role="doctor"
           />
@@ -44,7 +44,7 @@ const ExplorePage = () => {
         <div className="flex items-center gap-10 mt-6 flex-wrap">
           <ArticleCard
             id=""
-            img="/blog-1.jpg"
+            img="/blog-1.webp"
             number="01"
             title="Staying Healthy to Practice Mindfulness"
             subtitle="Symptoms are chills, fever and sweating, usually a sign of weakness and nothing more"
@@ -52,7 +52,7 @@ const ExplorePage = () => {
 
           <ArticleCard
             id=""
-            img="/blog-2.jpg"
+            img="/blog-2.webp"
             number="02"
             title="Staying Healthy to Practice Mindfulness"
             subtitle="Symptoms are chills, fever and sweating, usually a sign of weakness and nothing more"
@@ -60,7 +60,7 @@ const ExplorePage = () => {
 
           <ArticleCard
             id=""
-            img="/blog-3.jpg"
+            img="/blog-3.webp"
             number="03"
             title="Staying Healthy to Practice Mindfulness"
             subtitle="Symptoms are chills, fever and sweating, usually a sign of weakness and nothing more"
@@ -68,7 +68,7 @@ const ExplorePage = () => {
 
           <ArticleCard
             id=""
-            img="/blog-2.jpg"
+            img="/blog-2.webp"
             number="04"
             title="Staying Healthy to Practice Mindfulness"
             subtitle="Symptoms are chills, fever and sweating, usually a sign of weakness and nothing more"
