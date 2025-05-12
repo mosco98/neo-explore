@@ -9,14 +9,12 @@ const DashboardOptions = () => {
 
   const variants = {
     open: {
-      // position: "absolute",
       width: "100%",
       height: "100%",
       top: 0,
       zIndex: 100
     },
     closed: {
-      // position: "relative",
       width: "64px",
       height: "64px",
       bottom: 0,
@@ -28,7 +26,6 @@ const DashboardOptions = () => {
     <div className="flex items-end relative">
       <div>
         <motion.div
-          // layout
           initial={false}
           variants={variants}
           animate={isAccountOpen ? "open" : "closed"}

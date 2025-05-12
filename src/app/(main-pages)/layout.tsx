@@ -9,7 +9,7 @@ const MainPagesLayout = ({ children }: MainPagesLayoutProps) => {
     <>
       <Navbar />
 
-      <main className="py-20 min-h-screen flex">
+      <main className="pt-20 pb-10 min-h-screen flex">
         <div className="pt-10 flex flex-col justify-between container">
           {children}
         </div>
