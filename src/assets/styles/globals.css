@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #f6f6f6;
   --foreground: #000;
 }
 
@@ -11,6 +11,8 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-sussie: var(--font-sussie);
+
+  --shadow-address-book: -240px 34px 84px 0px rgba(0, 0, 0, 0.05);
 }
 
 @utility container {
@@ -43,4 +45,8 @@
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+button {
+  @apply cursor-pointer hover:opacity-80 transition;
 }

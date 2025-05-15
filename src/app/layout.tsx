@@ -18,10 +18,10 @@ export default function RootLayout({
       <body
         className={cn(
           `antialiased`,
-          geistSans.className,
           geistSans.variable,
           geistMono.variable,
-          sussieFont.variable
+          sussieFont.variable,
+          geistSans.className
         )}
       >
         {children}

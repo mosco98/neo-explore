@@ -8,7 +8,7 @@ const ExplorePage = () => {
 
       <section>
         <h2 className="text-2xl font-semibold">Consult Cards</h2>
-        <div className="flex items-center gap-4 mt-6 flex-wrap">
+        <div className="flex items-center gap-10 mt-6 flex-wrap">
           <ConsultProviderCard
             id=""
             img={"/provider.webp"}
