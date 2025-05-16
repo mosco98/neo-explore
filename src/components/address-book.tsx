@@ -78,7 +78,7 @@ const AddressBook = () => {
   }
 
   return (
-    <div className="flex flex-1 gap-20 pl-[92px] pt-12">
+    <div className="flex flex-1 gap-16 pl-[92px] pt-12">
       <div className="flex-1 pb-[64px]">
         <div className="h-8 min-w-8 text-[20px] bg-[#909090] inline-flex items-center justify-center text-white uppercase">
           {activeLetter}
@@ -91,7 +91,7 @@ const AddressBook = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ delay: 0.5 }}
-              className="mt-[66px] sm:max-h-[510px] 2xl:max-h-[900px] overflow-y-auto"
+              className="mt-[66px] max-h-[calc(100vh-330px)] overflow-y-auto pr-2"
             >
               <ContactList
                 setActiveLetter={(letter) => setActiveLetter(letter)}
