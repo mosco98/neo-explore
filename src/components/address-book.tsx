@@ -10,7 +10,7 @@ import {
   Search,
   UserPlus
 } from "lucide-react";
-import { motion } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
 import Image from "next/image";
 import { useState } from "react";
 import AddProfessionalNetwork from "./add-professional-network";
@@ -69,23 +69,35 @@ const AddressBook = () => {
           A
         </div>
 
-        <div className="mt-[66px] max-h-[510px] overflow-y-auto">
-          {contacts.map((_item, i) => (
-            <div
-              key={i}
-              role="button"
-              className="py-3 uppercase flex items-center justify-between border-b relative cursor-pointer hover:bg-[#90909005] transition group"
+        <AnimatePresence>
+          {!isAddOpen && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ delay: 0.5 }}
+              className="mt-[66px] sm:max-h-[510px] 2xl:max-h-[900px] overflow-y-auto"
             >
-              <p className="text-sm font-medium font-mono group-hover:text-[#F05211] transition">
-                Abbott ANDRE
-              </p>
+              {contacts.map((_item, i) => (
+                <div
+                  key={i}
+                  role="button"
+                  className="py-3 uppercase flex items-center justify-between border-b relative cursor-pointer hover:bg-[#90909005] transition group"
+                >
+                  <p className="text-sm font-medium font-mono group-hover:text-[#F05211] transition">
+                    Abbott ANDRE
+                  </p>
 
-              <p className="text-[#909090] text-[11px]">Physical Therapist</p>
+                  <p className="text-[#909090] text-[11px]">
+                    Physical Therapist
+                  </p>
 
-              <div className="absolute w-[42px] h-[2px] bg-black top-[99%] group-hover:bg-[#F05211] transition"></div>
-            </div>
-          ))}
-        </div>
+                  <div className="absolute w-[42px] h-[2px] bg-black top-[99%] group-hover:bg-[#F05211] transition"></div>
+                </div>
+              ))}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
       <motion.div
@@ -216,98 +228,116 @@ const AddressBook = () => {
                     />
                   </div>
 
-                  <div className="mt-2.5">
-                    <h2 className="text-sm font-semibold line-clamp-1">
-                      Amina Chinyere - Thomp...
-                    </h2>
-                    <p className="mt-px text-[#C5C5C5] text-xs">
-                      Occupational Therapist
-                    </p>
-
-                    <div className="flex items-center flex-wrap gap-1 mt-2">
-                      <div className="h-[18px] px-2 bg-[#D1D1D1] flex items-center justify-center text-[8px] text-xs font-mono text-[#0A0A0A] uppercase font-medium">
-                        Endocrinology
-                      </div>
-
-                      <div className="h-[18px] px-2 bg-[#D1D1D1] flex items-center justify-center text-[8px] text-xs font-mono text-[#0A0A0A] uppercase font-medium">
-                        Diabetology
-                      </div>
-                    </div>
-                  </div>
-
                   <button className="absolute top-1 right-0 group">
                     <ArrowUpRight className="size-4.5 group-hover:rotate-45 will-change-transform transition" />
                   </button>
                 </div>
 
-                <div className="mt-10 space-y-4">
-                  <div>
-                    <p className="text-[#C5C5C5] uppercase text-[10px] !font-mono">
-                      Location [1]
-                    </p>
+                <AnimatePresence>
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ delay: 0.5 }}
+                    className="mt-2.5"
+                  >
+                    <div>
+                      <h2 className="text-sm font-semibold line-clamp-1">
+                        Amina Chinyere - Thomp...
+                      </h2>
+                      <p className="mt-px text-[#C5C5C5] text-xs">
+                        Occupational Therapist
+                      </p>
 
-                    <div className="text-xs mt-1.5 space-y-px">
-                      <p>United Kingdom</p>
-                      <p>London</p>
+                      <div className="flex items-center flex-wrap gap-1 mt-2">
+                        <div className="h-[18px] px-2 bg-[#D1D1D1] flex items-center justify-center text-[8px] text-xs font-mono text-[#0A0A0A] uppercase font-medium">
+                          Endocrinology
+                        </div>
+
+                        <div className="h-[18px] px-2 bg-[#D1D1D1] flex items-center justify-center text-[8px] text-xs font-mono text-[#0A0A0A] uppercase font-medium">
+                          Diabetology
+                        </div>
+                      </div>
                     </div>
-                  </div>
 
-                  <div>
-                    <p className="text-[#C5C5C5] uppercase text-[10px]">
-                      Tomorrow +2hrs
-                    </p>
+                    <div className="mt-10 space-y-4">
+                      <div>
+                        <p className="text-[#C5C5C5] uppercase text-[10px] !font-mono">
+                          Location [1]
+                        </p>
 
-                    <div className="text-xs mt-1.5">
-                      <p>1:30pm Local Time</p>
+                        <div className="text-xs mt-1.5 space-y-px">
+                          <p>United Kingdom</p>
+                          <p>London</p>
+                        </div>
+                      </div>
+
+                      <div>
+                        <p className="text-[#C5C5C5] uppercase text-[10px]">
+                          Tomorrow +2hrs
+                        </p>
+
+                        <div className="text-xs mt-1.5">
+                          <p>1:30pm Local Time</p>
+                        </div>
+                      </div>
+
+                      <div>
+                        <p className="text-[#C5C5C5] uppercase text-[10px]">
+                          Visit Types [5]
+                        </p>
+
+                        <div className="text-xs mt-1.5 space-y-px">
+                          <p>Telemedicine</p>
+                          <p>General health consultations +2</p>
+                        </div>
+                      </div>
+
+                      <div>
+                        <p className="text-[#C5C5C5] uppercase text-[10px]">
+                          Availability
+                        </p>
+
+                        <div className="text-xs mt-1.5 space-y-px">
+                          <p>Mon–Fri, 8am–5pm</p>
+                          <p>Sat, Closed</p>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-
-                  <div>
-                    <p className="text-[#C5C5C5] uppercase text-[10px]">
-                      Visit Types [5]
-                    </p>
-
-                    <div className="text-xs mt-1.5 space-y-px">
-                      <p>Telemedicine</p>
-                      <p>General health consultations +2</p>
-                    </div>
-                  </div>
-
-                  <div>
-                    <p className="text-[#C5C5C5] uppercase text-[10px]">
-                      Availability
-                    </p>
-
-                    <div className="text-xs mt-1.5 space-y-px">
-                      <p>Mon–Fri, 8am–5pm</p>
-                      <p>Sat, Closed</p>
-                    </div>
-                  </div>
-                </div>
+                  </motion.div>
+                </AnimatePresence>
               </div>
 
-              <div className="flex items-center justify-between">
-                <button className="size-8 border border-white flex items-center justify-center hover:bg-white hover:text-black transition">
-                  <Mail className="size-4" />
-                </button>
-
-                <button className="size-8 border border-white flex items-center justify-center hover:bg-white hover:text-black transition">
-                  <MessageCircle className="size-4" />
-                </button>
-
-                <button className="size-8 border border-white flex items-center justify-center hover:bg-white hover:text-black transition">
-                  <Calendar className="size-4" />
-                </button>
-
-                <motion.button
-                  layoutId="add-icon-box"
-                  className="size-8 border border-white flex items-center justify-center hover:bg-white hover:text-black transition"
-                  transition={{ duration: 0 }}
-                  onClick={() => setIsAddOpen(true)}
+              <AnimatePresence>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ delay: 0.5 }}
+                  className="flex items-center justify-between"
                 >
-                  <UserPlus className="size-4" />
-                </motion.button>
-              </div>
+                  <button className="size-8 border border-white flex items-center justify-center hover:bg-white hover:text-black transition">
+                    <Mail className="size-4" />
+                  </button>
+
+                  <button className="size-8 border border-white flex items-center justify-center hover:bg-white hover:text-black transition">
+                    <MessageCircle className="size-4" />
+                  </button>
+
+                  <button className="size-8 border border-white flex items-center justify-center hover:bg-white hover:text-black transition">
+                    <Calendar className="size-4" />
+                  </button>
+
+                  <motion.button
+                    layoutId="add-icon-box"
+                    className="size-8 border border-white flex items-center justify-center hover:bg-white hover:text-black transition"
+                    transition={{ duration: 0 }}
+                    onClick={() => setIsAddOpen(true)}
+                  >
+                    <UserPlus className="size-4" />
+                  </motion.button>
+                </motion.div>
+              </AnimatePresence>
             </div>
           </>
         )}
