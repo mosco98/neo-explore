@@ -36,7 +36,7 @@ const ContactList = ({
     });
 
     return () => observer.disconnect();
-  }, [setActiveLetter]);
+  }, []);
 
   const handleOnMouseOver = (detail: { name: string; role: string }) => {
     setSelectedDetails(detail);

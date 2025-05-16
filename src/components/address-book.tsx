@@ -71,7 +71,7 @@ const AddressBook = () => {
   return (
     <div className="flex flex-1 gap-20 pl-[92px] pt-12">
       <div className="flex-1 pb-[64px]">
-        <div className="size-8 text-[20px] bg-[#909090] flex items-center justify-center text-white uppercase">
+        <div className="h-8 min-w-8 text-[20px] bg-[#909090] inline-flex items-center justify-center text-white uppercase">
           {activeLetter}
         </div>
 
@@ -184,8 +184,10 @@ const AddressBook = () => {
                           key={i}
                           className={cn(
                             "flex items-center justify-center uppercase h-[23px] text-[18px]",
-                            i === ALPHA_NUMERIC.length - 1 && "col-span-2"
+                            i === ALPHA_NUMERIC.length - 1 && "col-span-2",
+                            item === activeLetter && "text-[#F05211]"
                           )}
+                          onClick={() => setActiveLetter(item)}
                         >
                           {item}
                         </button>
