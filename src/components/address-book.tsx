@@ -14,6 +14,9 @@ import { AnimatePresence, motion } from "motion/react";
 import Image from "next/image";
 import { useState } from "react";
 import AddProfessionalNetwork from "./add-professional-network";
+import ContactList from "./contacts-list";
+
+export type DetailType = { name: string; role: string };
 
 const ALPHA_NUMERIC = [
   "a",
@@ -45,13 +48,16 @@ const ALPHA_NUMERIC = [
   "0-9"
 ];
 
-const contacts = Array.from({ length: 20 });
-
 const AddressBook = () => {
   const [isAddOpen, setIsAddOpen] = useState(false);
-  const [activeScreen, setActiveScreen] = useState<
-    "default" | "keypad" | "details"
-  >("details");
+  const [activeScreen, setActiveScreen] = useState<"default" | "keypad">(
+    "default"
+  );
+  const [activeLetter, setActiveLetter] = useState("");
+
+  const [selectedDetails, setSelectedDetails] = useState<
+    DetailType | undefined
+  >(undefined);
 
   if (isAddOpen) {
     return (
@@ -65,8 +71,8 @@ const AddressBook = () => {
   return (
     <div className="flex flex-1 gap-20 pl-[92px] pt-12">
       <div className="flex-1 pb-[64px]">
-        <div className="size-8 text-[20px] bg-[#909090] flex items-center justify-center text-white">
-          A
+        <div className="size-8 text-[20px] bg-[#909090] flex items-center justify-center text-white uppercase">
+          {activeLetter}
         </div>
 
         <AnimatePresence>
@@ -78,23 +84,10 @@ const AddressBook = () => {
               transition={{ delay: 0.5 }}
               className="mt-[66px] sm:max-h-[510px] 2xl:max-h-[900px] overflow-y-auto"
             >
-              {contacts.map((_item, i) => (
-                <div
-                  key={i}
-                  role="button"
-                  className="py-3 uppercase flex items-center justify-between border-b relative cursor-pointer hover:bg-[#90909005] transition group"
-                >
-                  <p className="text-sm font-medium font-mono group-hover:text-[#F05211] transition">
-                    Abbott ANDRE
-                  </p>
-
-                  <p className="text-[#909090] text-[11px]">
-                    Physical Therapist
-                  </p>
-
-                  <div className="absolute w-[42px] h-[2px] bg-black top-[99%] group-hover:bg-[#F05211] transition"></div>
-                </div>
-              ))}
+              <ContactList
+                setActiveLetter={(letter) => setActiveLetter(letter)}
+                setSelectedDetails={setSelectedDetails}
+              />
             </motion.div>
           )}
         </AnimatePresence>
@@ -105,7 +98,7 @@ const AddressBook = () => {
         className="w-[278px] h-[590px] bg-[#0A0A0A] self-end px-[42px] pt-[42px] pb-[64px] text-white text-sm flex flex-col justify-between font-mono"
       >
         <>
-          {activeScreen !== "details" && (
+          {!selectedDetails && (
             <>
               {activeScreen === "default" && (
                 <>
@@ -214,7 +207,7 @@ const AddressBook = () => {
           )}
         </>
 
-        {activeScreen === "details" && (
+        {selectedDetails && (
           <>
             <div className="flex-1 flex flex-col justify-between">
               <div>
@@ -243,10 +236,10 @@ const AddressBook = () => {
                   >
                     <div>
                       <h2 className="text-sm font-semibold line-clamp-1">
-                        Amina Chinyere - Thomp...
+                        {selectedDetails.name}
                       </h2>
                       <p className="mt-px text-[#C5C5C5] text-xs">
-                        Occupational Therapist
+                        {selectedDetails.role}
                       </p>
 
                       <div className="flex items-center flex-wrap gap-1 mt-2">
