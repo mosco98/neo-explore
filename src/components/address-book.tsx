@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import Image from "next/image";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import AddProfessionalNetwork from "./add-professional-network";
 import ContactList from "./contacts-list";
 
@@ -59,6 +59,15 @@ const AddressBook = () => {
     DetailType | undefined
   >(undefined);
 
+  const sectionRefs = useRef<{ [key: string]: HTMLElement | null }>({});
+
+  const scrollToLetter = (letter: string) => {
+    const el = sectionRefs.current[letter];
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   if (isAddOpen) {
     return (
       <AddProfessionalNetwork
@@ -87,6 +96,7 @@ const AddressBook = () => {
               <ContactList
                 setActiveLetter={(letter) => setActiveLetter(letter)}
                 setSelectedDetails={setSelectedDetails}
+                sectionRefs={sectionRefs}
               />
             </motion.div>
           )}
@@ -187,7 +197,10 @@ const AddressBook = () => {
                             i === ALPHA_NUMERIC.length - 1 && "col-span-2",
                             item === activeLetter && "text-[#F05211]"
                           )}
-                          onClick={() => setActiveLetter(item)}
+                          onClick={() => {
+                            scrollToLetter(item);
+                            setActiveLetter(item);
+                          }}
                         >
                           {item}
                         </button>

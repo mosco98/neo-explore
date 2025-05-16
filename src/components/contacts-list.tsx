@@ -1,19 +1,23 @@
 "use client";
 
 import { providers } from "@/lib/providers";
-import { useEffect, useRef } from "react";
+import { RefObject, useEffect } from "react";
 import { DetailType } from "./address-book";
 
 interface ContactListProps {
   setActiveLetter: (letter: string) => void;
   setSelectedDetails: (detail: DetailType | undefined) => void;
+  sectionRefs: RefObject<{
+    [key: string]: HTMLElement | null;
+  }>;
 }
 
 const ContactList = ({
   setActiveLetter,
-  setSelectedDetails
+  setSelectedDetails,
+  sectionRefs
 }: ContactListProps) => {
-  const sectionRefs = useRef<{ [key: string]: HTMLElement | null }>({});
+  // const sectionRefs = useRef<{ [key: string]: HTMLElement | null }>({});
 
   useEffect(() => {
     const observer = new IntersectionObserver(
