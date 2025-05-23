@@ -54,7 +54,6 @@ const AddressBook = () => {
     "default"
   );
   const [activeLetter, setActiveLetter] = useState("");
-
   const [selectedDetails, setSelectedDetails] = useState<
     DetailType | undefined
   >(undefined);
