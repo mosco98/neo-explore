@@ -1,4 +1,4 @@
-import { geistMono, geistSans, sussieFont } from "@/assets/fonts";
+import { geistMono, geistSans } from "@/assets/fonts";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import "../assets/styles/globals.css";
@@ -20,7 +20,6 @@ export default function RootLayout({
           `antialiased`,
           geistSans.variable,
           geistMono.variable,
-          sussieFont.variable,
           geistSans.className
         )}
       >

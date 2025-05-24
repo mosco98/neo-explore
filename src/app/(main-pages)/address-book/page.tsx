@@ -21,7 +21,7 @@ const AddressBookPage = () => {
         <ProfileButton isOpen={isAccountOpen} onOpenChange={setIsAccountOpen} />
       </div>
 
-      <div className="flex-1 bg-white shadow-address-book flex">
+      <div className="flex-1 bg-white shadow-address-book flex px-[45px] overflow-hidden">
         <AddressBook />
       </div>
     </div>

@@ -77,10 +77,16 @@ const AddressBook = () => {
   }
 
   return (
-    <div className="flex flex-1 gap-16 pl-[92px] pt-12">
+    <div className="flex flex-1 gap-[45px] pt-[45px] pb-10">
       <div className="flex-1 pb-[64px]">
-        <div className="h-8 min-w-8 text-[20px] bg-[#909090] inline-flex items-center justify-center text-white uppercase">
-          {activeLetter}
+        <div className="flex items-center justify-between uppercase text-sm font-medium">
+          <div className="flex items-center gap-2">
+            <div className="size-2.5 bg-black"></div>
+
+            <p className="font-mono">Providers</p>
+          </div>
+
+          <div className="text-[#909090]">letter {activeLetter}</div>
         </div>
 
         <AnimatePresence>
@@ -90,7 +96,7 @@ const AddressBook = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ delay: 0.5 }}
-              className="mt-[66px] max-h-[calc(100vh-330px)] overflow-y-auto pr-2"
+              className="max-h-[calc(100dvh-330px)] overflow-y-auto pr-2 mt-10"
             >
               <ContactList
                 setActiveLetter={(letter) => setActiveLetter(letter)}
@@ -104,7 +110,7 @@ const AddressBook = () => {
 
       <motion.div
         layoutId="details-panel"
-        className="w-[278px] h-[590px] bg-[#0A0A0A] self-end px-[42px] pt-[42px] pb-[64px] text-white text-sm flex flex-col justify-between font-mono"
+        className="w-[278px] h-full bg-[#0A0A0A] self-end px-[42px] pt-[42px] pb-[64px] text-white text-sm flex flex-col justify-between font-mono"
       >
         <>
           {!selectedDetails && (
