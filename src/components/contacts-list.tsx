@@ -60,7 +60,7 @@ const ContactList = ({
             <div
               key={i}
               role="button"
-              className="py-3 flex items-center justify-between border-b relative cursor-pointer hover:bg-[#90909005] transition group"
+              className="py-3 flex items-center justify-between border-b border-[#909090] relative cursor-pointer hover:bg-[#90909005] transition group"
               onMouseOver={() => handleOnMouseOver(item)}
             >
               <p className="text-sm font-medium font-mono group-hover:text-[#F05211] transition uppercase">
@@ -69,7 +69,7 @@ const ContactList = ({
 
               <p className="text-[#909090] text-xs capitalize">{item.role}</p>
 
-              <div className="absolute w-[42px] h-[2px] bg-black top-[99%] group-hover:bg-[#F05211] transition"></div>
+              <div className="absolute w-[42px] h-[2px] bg-[#909090] top-[99%] group-hover:bg-[#F05211] transition"></div>
             </div>
           ))}
         </section>

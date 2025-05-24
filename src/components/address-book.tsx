@@ -110,7 +110,7 @@ const AddressBook = () => {
 
       <motion.div
         layoutId="details-panel"
-        className="w-[278px] h-full bg-[#0A0A0A] self-end px-[42px] pt-[42px] pb-[64px] text-white text-sm flex flex-col justify-between font-mono"
+        className="w-[278px] h-full bg-[#0A0A0A] self-end px-[42px] pt-[45px] pb-[42px] text-white text-sm flex flex-col justify-between font-mono"
       >
         <>
           {!selectedDetails && (

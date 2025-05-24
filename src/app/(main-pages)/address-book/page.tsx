@@ -11,9 +11,9 @@ const AddressBookPage = () => {
   return (
     <div className="flex-1 relative flex gap-[129px]">
       <div className="pt-12">
-        <div className="inline-flex items-center gap-5 text-[32px] font-medium">
+        <div className="inline-flex items-center gap-5 text-[20px] font-medium">
           <button>
-            <ArrowLeft className="size-[26px]" />
+            <ArrowLeft />
           </button>
           Address Book
         </div>
