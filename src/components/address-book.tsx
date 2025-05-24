@@ -63,7 +63,7 @@ const AddressBook = () => {
   const scrollToLetter = (letter: string) => {
     const el = sectionRefs.current[letter];
     if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      el.scrollIntoView({ block: "start" });
     }
   };
 
