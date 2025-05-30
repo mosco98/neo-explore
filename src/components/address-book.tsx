@@ -1,10 +1,11 @@
 "use client";
 
-import { cn } from "@/lib/utils";
+import { cn, getCurrentTimeFromOffset } from "@/lib/utils";
 import {
   ArrowLeft,
   ArrowUpRight,
   Calendar,
+  ChevronDown,
   Mail,
   MessageCircle,
   Search,
@@ -16,7 +17,14 @@ import { useRef, useState } from "react";
 import AddProfessionalNetwork from "./add-professional-network";
 import ContactList from "./contacts-list";
 
-export type DetailType = { name: string; role: string };
+export type DetailType = {
+  name: string;
+  role: string;
+  location: string;
+  consult_types: string[];
+  timezone: string;
+  avatar: string;
+};
 
 const ALPHA_NUMERIC = [
   "a",
@@ -50,9 +58,9 @@ const ALPHA_NUMERIC = [
 
 const AddressBook = () => {
   const [isAddOpen, setIsAddOpen] = useState(false);
-  const [activeScreen, setActiveScreen] = useState<"default" | "keypad">(
-    "default"
-  );
+  const [activeScreen, setActiveScreen] = useState<
+    "default" | "keypad" | "filter"
+  >("default");
   const [activeLetter, setActiveLetter] = useState("");
   const [selectedDetails, setSelectedDetails] = useState<
     DetailType | undefined
@@ -116,9 +124,14 @@ const AddressBook = () => {
           {!selectedDetails && (
             <>
               {activeScreen === "default" && (
-                <>
+                <div className="flex-1 space-y-[88px]">
                   <div className="flex items-center justify-between">
-                    <p>/25</p>
+                    <button
+                      className="text-xs uppercase font-medium font-mono"
+                      onClick={() => setActiveScreen("filter")}
+                    >
+                      FIlter
+                    </button>
 
                     <button>
                       <Search className="size-[14px]" />
@@ -159,7 +172,7 @@ const AddressBook = () => {
                         <button>OTHERS</button>
                       </li>
 
-                      <li className="text-[#F05211]">
+                      {/* <li className="text-[#F05211]">
                         <button
                           className="inline-flex items-center gap-[19px]"
                           onClick={() => setActiveScreen("keypad")}
@@ -178,10 +191,58 @@ const AddressBook = () => {
                           </svg>
                           A-Z
                         </button>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
-                </>
+                </div>
+              )}
+
+              {activeScreen === "filter" && (
+                <div className="flex-1 space-y-[37px]">
+                  <div className="flex items-center justify-between">
+                    <button
+                      className="text-xs uppercase font-medium font-mono"
+                      onClick={() => setActiveScreen("default")}
+                    >
+                      <ArrowLeft className="text-[#F05211] size-4" />
+                    </button>
+
+                    <button>
+                      <Search className="size-[14px]" />
+                    </button>
+                  </div>
+
+                  <div className="border border-[#343434]">
+                    <div>
+                      <div className="text-sm uppercase flex items-center justify-between p-2 border-b border-[#343434]">
+                        <p>Filter by</p>
+
+                        <ChevronDown className="text-[#343434] size-5" />
+                      </div>
+
+                      <ul className="space-y-3 px-2 pt-2 pb-10 text-xs">
+                        <li>SPECIALTY</li>
+                        <li>DISTANCE</li>
+                        <li>LOCATION</li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <div className="text-sm uppercase flex items-center justify-between p-2 border-y border-[#343434]">
+                        <p>Sort by</p>
+
+                        <ChevronDown className="text-[#343434] size-5" />
+                      </div>
+
+                      <ul className="space-y-3 px-2 pt-2 pb-10 text-xs">
+                        <li>ALL</li>
+                        <li>FAVOURITE</li>
+                        <li onClick={() => setActiveScreen("keypad")}>A - Z</li>
+                        <li>Z - A</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               )}
 
               {activeScreen === "keypad" && (
@@ -234,7 +295,7 @@ const AddressBook = () => {
                 <div className="relative">
                   <div className="size-12 rounded-full relative overflow-hidden">
                     <Image
-                      src={"/provider.webp"}
+                      src={selectedDetails.avatar}
                       fill
                       alt="provider"
                       className="object-cover object-top"
@@ -280,29 +341,41 @@ const AddressBook = () => {
                         </p>
 
                         <div className="text-xs mt-1.5 space-y-px">
-                          <p>United Kingdom</p>
-                          <p>London</p>
+                          {selectedDetails.location
+                            .split(", ")
+                            .map((line, index) => (
+                              <p key={index}>{line}</p>
+                            ))}
+                          {/* <p>United Kingdom</p>
+                          <p>London</p> */}
                         </div>
                       </div>
 
                       <div>
                         <p className="text-[#C5C5C5] uppercase text-[10px]">
-                          Tomorrow +2hrs
+                          Tomorrow {selectedDetails.timezone}hrs
                         </p>
 
                         <div className="text-xs mt-1.5">
-                          <p>1:30pm Local Time</p>
+                          <p>
+                            {getCurrentTimeFromOffset(
+                              Number(selectedDetails.timezone)
+                            )}{" "}
+                            Local Time
+                          </p>
                         </div>
                       </div>
 
                       <div>
                         <p className="text-[#C5C5C5] uppercase text-[10px]">
-                          Visit Types [5]
+                          Visit Types [{selectedDetails.consult_types.length}]
                         </p>
 
                         <div className="text-xs mt-1.5 space-y-px">
-                          <p>Telemedicine</p>
-                          <p>General health consultations +2</p>
+                          {selectedDetails.consult_types.map((type, index) => (
+                            <p key={index}>{type}</p>
+                          ))}
+                          {/* <p>General health consultations +2</p> */}
                         </div>
                       </div>
 
@@ -329,21 +402,21 @@ const AddressBook = () => {
                   transition={{ delay: 0.5 }}
                   className="flex items-center justify-between"
                 >
-                  <button className="size-8 border border-white flex items-center justify-center hover:bg-white hover:text-black transition">
+                  <button className="size-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-black transition">
                     <Mail className="size-4" />
                   </button>
 
-                  <button className="size-8 border border-white flex items-center justify-center hover:bg-white hover:text-black transition">
+                  <button className="size-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-black transition">
                     <MessageCircle className="size-4" />
                   </button>
 
-                  <button className="size-8 border border-white flex items-center justify-center hover:bg-white hover:text-black transition">
+                  <button className="size-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-black transition">
                     <Calendar className="size-4" />
                   </button>
 
                   <motion.button
                     layoutId="add-icon-box"
-                    className="size-8 border border-white flex items-center justify-center hover:bg-white hover:text-black transition"
+                    className="size-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-black transition"
                     transition={{ duration: 0 }}
                     onClick={() => setIsAddOpen(true)}
                   >

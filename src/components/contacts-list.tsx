@@ -42,7 +42,7 @@ const ContactList = ({
     return () => observer.disconnect();
   }, []);
 
-  const handleOnMouseOver = (detail: { name: string; role: string }) => {
+  const handleOnMouseOver = (detail: DetailType) => {
     setSelectedDetails(detail);
   };
 
