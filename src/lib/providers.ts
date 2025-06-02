@@ -6,7 +6,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["Telemedicine", "General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/men/1.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/1.jpg",
+      specialities: ["Cosmetic Dermatology", "Pediatric Dermatology"]
     },
     {
       name: "Abbott Kai",
@@ -14,7 +15,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/2.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/2.jpg",
+      specialities: ["Pediatric Nursing", "Emergency Care"]
     },
     {
       name: "Abbott Xena",
@@ -22,7 +24,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/3.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/3.jpg",
+      specialities: ["Pediatric Nursing", "Emergency Care"]
     },
     {
       name: "Abbott Will",
@@ -30,7 +33,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/women/4.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/4.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     },
     {
       name: "Abbott Uma",
@@ -38,7 +42,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/men/5.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/5.jpg",
+      specialities: ["Cardiac Electrophysiology", "Interventional Cardiology"]
     },
     {
       name: "Abbott Grace",
@@ -46,7 +51,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/6.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/6.jpg",
+      specialities: ["Cardiac Electrophysiology", "Interventional Cardiology"]
     },
     {
       name: "Abbott Drew",
@@ -54,7 +60,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/7.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/7.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Abbott Uma",
@@ -62,7 +69,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/women/8.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/8.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Abbott Grace",
@@ -70,7 +78,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health", "Emergency"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/men/9.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/9.jpg",
+      specialities: ["Pediatric Nursing", "Emergency Care"]
     },
     {
       name: "Abbott Kai",
@@ -78,7 +87,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "General health", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/10.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/10.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     }
   ],
   b: [
@@ -88,7 +98,11 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["Telemedicine", "General health"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/11.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/11.jpg",
+      specialities: [
+        "Orthopedic Physical Therapy",
+        "Geriatric Physical Therapy"
+      ]
     },
     {
       name: "Baker Mia",
@@ -96,7 +110,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Emergency"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/women/12.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/12.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Baker Kai",
@@ -104,7 +119,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health", "Emergency"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/men/13.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/13.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Baker Toby",
@@ -112,7 +128,11 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "General health", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/14.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/14.jpg",
+      specialities: [
+        "Orthopedic Physical Therapy",
+        "Geriatric Physical Therapy"
+      ]
     },
     {
       name: "Baker Drew",
@@ -120,7 +140,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/15.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/15.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Baker Harper",
@@ -128,7 +149,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["General health"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/women/16.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/16.jpg",
+      specialities: ["Pediatric Nursing", "Emergency Care"]
     },
     {
       name: "Baker Casey",
@@ -136,7 +158,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["Telemedicine", "General health", "Emergency"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/men/17.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/17.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Baker Kai",
@@ -144,7 +167,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/18.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/18.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Baker Toby",
@@ -152,7 +176,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/19.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/19.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     },
     {
       name: "Baker Xena",
@@ -160,7 +185,11 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/women/20.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/20.jpg",
+      specialities: [
+        "Orthopedic Physical Therapy",
+        "Geriatric Physical Therapy"
+      ]
     }
   ],
   c: [
@@ -170,7 +199,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["Telemedicine", "General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/men/21.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/21.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Carter Owen",
@@ -178,7 +208,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/22.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/22.jpg",
+      specialities: ["Pediatric Nursing", "Emergency Care"]
     },
     {
       name: "Carter Jack",
@@ -186,7 +217,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/23.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/23.jpg",
+      specialities: ["Cosmetic Dermatology", "Pediatric Dermatology"]
     },
     {
       name: "Carter Toby",
@@ -194,7 +226,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/women/24.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/24.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     },
     {
       name: "Carter Noah",
@@ -202,7 +235,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/men/25.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/25.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Carter Jack",
@@ -210,7 +244,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/26.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/26.jpg",
+      specialities: ["Cardiac Electrophysiology", "Interventional Cardiology"]
     },
     {
       name: "Carter Alex",
@@ -218,7 +253,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/27.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/27.jpg",
+      specialities: ["Cosmetic Dermatology", "Pediatric Dermatology"]
     },
     {
       name: "Carter Drew",
@@ -226,7 +262,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/women/28.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/28.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     },
     {
       name: "Carter Jack",
@@ -234,7 +271,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/men/29.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/29.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Carter Jack",
@@ -242,7 +280,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/30.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/30.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     }
   ],
   d: [
@@ -252,7 +291,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/31.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/31.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     },
     {
       name: "Dawson Peyton",
@@ -260,7 +300,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/32.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/32.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     },
     {
       name: "Dawson Quinn",
@@ -268,7 +309,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/33.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/33.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Dawson Ivy",
@@ -276,7 +318,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/34.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/34.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Dawson Ivy",
@@ -284,7 +327,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Emergency"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/35.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/35.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Dawson Finn",
@@ -292,7 +336,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["Telemedicine", "General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/36.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/36.jpg",
+      specialities: ["Cosmetic Dermatology", "Pediatric Dermatology"]
     },
     {
       name: "Dawson Owen",
@@ -300,7 +345,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/37.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/37.jpg",
+      specialities: ["Pediatric Nursing", "Emergency Care"]
     },
     {
       name: "Dawson Harper",
@@ -308,7 +354,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/38.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/38.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     },
     {
       name: "Dawson Jack",
@@ -316,7 +363,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/39.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/39.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     },
     {
       name: "Dawson Finn",
@@ -324,7 +372,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/40.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/40.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     }
   ],
   e: [
@@ -334,7 +383,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "General health"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/41.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     },
     {
       name: "Ellis Peyton",
@@ -342,7 +392,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/42.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/42.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Ellis Evan",
@@ -350,7 +401,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/43.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/43.jpg",
+      specialities: ["Cardiac Electrophysiology", "Interventional Cardiology"]
     },
     {
       name: "Ellis Mia",
@@ -358,7 +410,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/44.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     },
     {
       name: "Ellis Mia",
@@ -366,7 +419,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/45.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/45.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Ellis Jack",
@@ -374,7 +428,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/46.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/46.jpg",
+      specialities: ["General Pediatrics", "Neonatology"]
     },
     {
       name: "Ellis Peyton",
@@ -382,7 +437,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/47.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/47.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Ellis Noah",
@@ -390,7 +446,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/48.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/48.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     },
     {
       name: "Ellis Evan",
@@ -398,7 +455,11 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/49.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/49.jpg",
+      specialities: [
+        "Orthopedic Physical Therapy",
+        "Geriatric Physical Therapy"
+      ]
     },
     {
       name: "Ellis Drew",
@@ -406,7 +467,11 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/50.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/50.jpg",
+      specialities: [
+        "Orthopedic Physical Therapy",
+        "Geriatric Physical Therapy"
+      ]
     }
   ],
   f: [
@@ -416,7 +481,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/51.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/51.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     },
     {
       name: "Foster Noah",
@@ -424,7 +490,11 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/52.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/52.jpg",
+      specialities: [
+        "Orthopedic Physical Therapy",
+        "Geriatric Physical Therapy"
+      ]
     },
     {
       name: "Foster Sage",
@@ -432,7 +502,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/53.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/53.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Foster Toby",
@@ -440,7 +511,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/54.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/54.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Foster Jack",
@@ -448,7 +520,11 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Emergency"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/55.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/55.jpg",
+      specialities: [
+        "Orthopedic Physical Therapy",
+        "Geriatric Physical Therapy"
+      ]
     },
     {
       name: "Foster Quinn",
@@ -456,7 +532,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["Telemedicine", "General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/56.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/56.jpg",
+      specialities: ["Cardiac Electrophysiology", "Interventional Cardiology"]
     },
     {
       name: "Foster Vera",
@@ -464,7 +541,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/57.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/57.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Foster Alex",
@@ -472,7 +550,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/58.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/58.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Foster Peyton",
@@ -480,7 +559,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/59.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/59.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     },
     {
       name: "Foster Evan",
@@ -488,7 +568,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/60.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/60.jpg",
+      specialities: ["General Pediatrics", "Neonatology"]
     }
   ],
   g: [
@@ -498,7 +579,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/61.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/61.jpg",
+      specialities: ["Cardiac Electrophysiology", "Interventional Cardiology"]
     },
     {
       name: "Garcia Ivy",
@@ -506,7 +588,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/62.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/62.jpg",
+      specialities: ["Cosmetic Dermatology", "Pediatric Dermatology"]
     },
     {
       name: "Garcia Zane",
@@ -514,7 +597,11 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Emergency"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/63.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/63.jpg",
+      specialities: [
+        "Orthopedic Physical Therapy",
+        "Geriatric Physical Therapy"
+      ]
     },
     {
       name: "Garcia Blake",
@@ -522,7 +609,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/64.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/64.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Garcia Toby",
@@ -530,7 +618,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "General health"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/65.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/65.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Garcia Noah",
@@ -538,7 +627,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/66.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/66.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Garcia Yara",
@@ -546,7 +636,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["General health", "Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/67.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/67.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Garcia Peyton",
@@ -554,7 +645,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/68.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/68.jpg",
+      specialities: ["Pediatric Nursing", "Emergency Care"]
     },
     {
       name: "Garcia Quinn",
@@ -562,7 +654,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/69.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/69.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Garcia Liam",
@@ -570,7 +663,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/70.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/70.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     }
   ],
   h: [
@@ -580,7 +674,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/71.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/71.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Hayes Yara",
@@ -588,7 +683,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/72.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/72.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     },
     {
       name: "Hayes Yara",
@@ -596,7 +692,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/73.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/73.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     },
     {
       name: "Hayes Xena",
@@ -604,7 +701,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/74.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/74.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     },
     {
       name: "Hayes Blake",
@@ -612,7 +710,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Emergency"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/75.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Hayes Finn",
@@ -620,7 +719,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/76.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/76.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     },
     {
       name: "Hayes Peyton",
@@ -628,7 +728,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/77.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/77.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Hayes Uma",
@@ -636,7 +737,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/78.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/78.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     },
     {
       name: "Hayes Yara",
@@ -644,7 +746,11 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Emergency"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/79.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/79.jpg",
+      specialities: [
+        "Orthopedic Physical Therapy",
+        "Geriatric Physical Therapy"
+      ]
     },
     {
       name: "Hayes Peyton",
@@ -652,7 +758,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/80.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/80.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     }
   ],
   i: [
@@ -662,7 +769,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/81.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/81.jpg",
+      specialities: ["General Pediatrics", "Neonatology"]
     },
     {
       name: "Irwin Riley",
@@ -670,7 +778,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/82.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/82.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     },
     {
       name: "Irwin Riley",
@@ -678,7 +787,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/83.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/83.jpg",
+      specialities: ["Pediatric Nursing", "Emergency Care"]
     },
     {
       name: "Irwin Blake",
@@ -686,7 +796,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/84.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/84.jpg",
+      specialities: ["Cardiac Electrophysiology", "Interventional Cardiology"]
     },
     {
       name: "Irwin Liam",
@@ -694,7 +805,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Emergency"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/85.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/85.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Irwin Sage",
@@ -702,7 +814,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["Telemedicine", "General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/86.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/86.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     },
     {
       name: "Irwin Evan",
@@ -710,7 +823,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/87.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/87.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Irwin Finn",
@@ -718,7 +832,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/88.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/88.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Irwin Owen",
@@ -726,7 +841,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Emergency"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/89.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/89.jpg",
+      specialities: ["Cosmetic Dermatology", "Pediatric Dermatology"]
     },
     {
       name: "Irwin Toby",
@@ -734,7 +850,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/90.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/90.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     }
   ],
   j: [
@@ -744,7 +861,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/91.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/91.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Jones Drew",
@@ -752,7 +870,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/92.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/92.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     },
     {
       name: "Jones Alex",
@@ -760,7 +879,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/93.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/93.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     },
     {
       name: "Jones Riley",
@@ -768,7 +888,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/94.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/94.jpg",
+      specialities: ["General Pediatrics", "Neonatology"]
     },
     {
       name: "Jones Toby",
@@ -776,7 +897,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/95.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/95.jpg",
+      specialities: ["General Pediatrics", "Neonatology"]
     },
     {
       name: "Jones Vera",
@@ -784,7 +906,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/96.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/96.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Jones Owen",
@@ -792,7 +915,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Emergency"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/97.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/97.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Jones Zane",
@@ -800,7 +924,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["Telemedicine", "General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/98.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/98.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Jones Mia",
@@ -808,7 +933,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/99.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/99.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Jones Riley",
@@ -816,7 +942,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/100.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/100.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     }
   ],
   k: [
@@ -826,7 +953,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/101.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/101.jpg",
+      specialities: ["General Pediatrics", "Neonatology"]
     },
     {
       name: "Knight Alex",
@@ -834,7 +962,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/102.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/102.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Knight Grace",
@@ -842,7 +971,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/103.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/103.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Knight Casey",
@@ -850,7 +980,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/104.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/104.jpg",
+      specialities: ["Cardiac Electrophysiology", "Interventional Cardiology"]
     },
     {
       name: "Knight Ivy",
@@ -858,7 +989,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Emergency"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/105.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/105.jpg",
+      specialities: ["Cosmetic Dermatology", "Pediatric Dermatology"]
     },
     {
       name: "Knight Uma",
@@ -866,7 +998,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/106.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/106.jpg",
+      specialities: ["General Pediatrics", "Neonatology"]
     },
     {
       name: "Knight Zane",
@@ -874,7 +1007,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/107.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/107.jpg",
+      specialities: ["Cosmetic Dermatology", "Pediatric Dermatology"]
     },
     {
       name: "Knight Grace",
@@ -882,7 +1016,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/108.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/108.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     },
     {
       name: "Knight Riley",
@@ -890,7 +1025,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/109.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/109.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     },
     {
       name: "Knight Noah",
@@ -898,7 +1034,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health", "Emergency"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/110.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/110.jpg",
+      specialities: ["Pediatric Nursing", "Emergency Care"]
     }
   ],
   l: [
@@ -908,7 +1045,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/111.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/111.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Lewis Liam",
@@ -916,7 +1054,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/112.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/112.jpg",
+      specialities: ["Cardiac Electrophysiology", "Interventional Cardiology"]
     },
     {
       name: "Lewis Mia",
@@ -924,7 +1063,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/113.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/113.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     },
     {
       name: "Lewis Drew",
@@ -932,7 +1072,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/114.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/114.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     },
     {
       name: "Lewis Jack",
@@ -940,7 +1081,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/115.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/115.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Lewis Harper",
@@ -948,7 +1090,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/116.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/116.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Lewis Will",
@@ -956,7 +1099,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Emergency"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/117.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/117.jpg",
+      specialities: ["Pediatric Nursing", "Emergency Care"]
     },
     {
       name: "Lewis Zane",
@@ -964,7 +1108,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["Telemedicine", "General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/118.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/118.jpg",
+      specialities: ["Cosmetic Dermatology", "Pediatric Dermatology"]
     },
     {
       name: "Lewis Mia",
@@ -972,7 +1117,11 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/119.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/119.jpg",
+      specialities: [
+        "Orthopedic Physical Therapy",
+        "Geriatric Physical Therapy"
+      ]
     },
     {
       name: "Lewis Vera",
@@ -980,7 +1129,11 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/120.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/120.jpg",
+      specialities: [
+        "Orthopedic Physical Therapy",
+        "Geriatric Physical Therapy"
+      ]
     }
   ],
   m: [
@@ -990,7 +1143,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/121.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/121.jpg",
+      specialities: ["General Pediatrics", "Neonatology"]
     },
     {
       name: "Miller Riley",
@@ -998,7 +1152,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/122.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/122.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Miller Toby",
@@ -1006,7 +1161,11 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/123.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/123.jpg",
+      specialities: [
+        "Orthopedic Physical Therapy",
+        "Geriatric Physical Therapy"
+      ]
     },
     {
       name: "Miller Yara",
@@ -1014,7 +1173,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/124.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/124.jpg",
+      specialities: ["Pediatric Nursing", "Emergency Care"]
     },
     {
       name: "Miller Quinn",
@@ -1022,7 +1182,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/125.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/125.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Miller Jack",
@@ -1030,7 +1191,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/126.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/126.jpg",
+      specialities: ["General Pediatrics", "Neonatology"]
     },
     {
       name: "Miller Blake",
@@ -1038,7 +1200,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/127.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/127.jpg",
+      specialities: ["Cardiac Electrophysiology", "Interventional Cardiology"]
     },
     {
       name: "Miller Toby",
@@ -1046,7 +1209,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/128.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/128.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     },
     {
       name: "Miller Will",
@@ -1054,7 +1218,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Emergency"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/129.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/129.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Miller Owen",
@@ -1062,7 +1227,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/130.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/130.jpg",
+      specialities: ["Pediatric Nursing", "Emergency Care"]
     }
   ],
   n: [
@@ -1072,7 +1238,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/131.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/131.jpg",
+      specialities: ["Pediatric Nursing", "Emergency Care"]
     },
     {
       name: "Nelson Zane",
@@ -1080,7 +1247,11 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/132.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/132.jpg",
+      specialities: [
+        "Orthopedic Physical Therapy",
+        "Geriatric Physical Therapy"
+      ]
     },
     {
       name: "Nelson Kai",
@@ -1088,7 +1259,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/133.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/133.jpg",
+      specialities: ["General Pediatrics", "Neonatology"]
     },
     {
       name: "Nelson Riley",
@@ -1096,7 +1268,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/134.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/134.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Nelson Liam",
@@ -1104,7 +1277,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/135.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/135.jpg",
+      specialities: ["General Pediatrics", "Neonatology"]
     },
     {
       name: "Nelson Xena",
@@ -1112,7 +1286,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/136.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/136.jpg",
+      specialities: ["General Pediatrics", "Neonatology"]
     },
     {
       name: "Nelson Xena",
@@ -1120,7 +1295,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Emergency"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/137.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/137.jpg",
+      specialities: ["General Pediatrics", "Neonatology"]
     },
     {
       name: "Nelson Ivy",
@@ -1128,7 +1304,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["Telemedicine", "General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/138.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/138.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     },
     {
       name: "Nelson Finn",
@@ -1136,7 +1313,11 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/139.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/139.jpg",
+      specialities: [
+        "Orthopedic Physical Therapy",
+        "Geriatric Physical Therapy"
+      ]
     },
     {
       name: "Nelson Liam",
@@ -1144,7 +1325,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/140.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/140.jpg",
+      specialities: ["Cosmetic Dermatology", "Pediatric Dermatology"]
     }
   ],
   o: [
@@ -1154,7 +1336,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/141.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/141.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     },
     {
       name: "Owens Will",
@@ -1162,7 +1345,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/142.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/142.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Owens Sage",
@@ -1170,7 +1354,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/143.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/143.jpg",
+      specialities: ["Cosmetic Dermatology", "Pediatric Dermatology"]
     },
     {
       name: "Owens Mia",
@@ -1178,7 +1363,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/144.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/144.jpg",
+      specialities: ["Cosmetic Dermatology", "Pediatric Dermatology"]
     },
     {
       name: "Owens Evan",
@@ -1186,7 +1372,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Emergency"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/145.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/145.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Owens Harper",
@@ -1194,7 +1381,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["Telemedicine", "General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/146.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/146.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Owens Kai",
@@ -1202,7 +1390,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/147.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/147.jpg",
+      specialities: ["Pediatric Nursing", "Emergency Care"]
     },
     {
       name: "Owens Zane",
@@ -1210,7 +1399,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/148.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/148.jpg",
+      specialities: ["Pediatric Nursing", "Emergency Care"]
     },
     {
       name: "Owens Kai",
@@ -1218,7 +1408,11 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/149.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/149.jpg",
+      specialities: [
+        "Orthopedic Physical Therapy",
+        "Geriatric Physical Therapy"
+      ]
     },
     {
       name: "Owens Riley",
@@ -1226,7 +1420,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health", "Emergency"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/150.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/150.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     }
   ],
   p: [
@@ -1236,7 +1431,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/151.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/151.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     },
     {
       name: "Parker Jack",
@@ -1244,7 +1440,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/152.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/152.jpg",
+      specialities: ["Cardiac Electrophysiology", "Interventional Cardiology"]
     },
     {
       name: "Parker Liam",
@@ -1252,7 +1449,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/153.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/153.jpg",
+      specialities: ["General Pediatrics", "Neonatology"]
     },
     {
       name: "Parker Riley",
@@ -1260,7 +1458,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/154.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/154.jpg",
+      specialities: ["Cosmetic Dermatology", "Pediatric Dermatology"]
     },
     {
       name: "Parker Jack",
@@ -1268,7 +1467,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/155.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/155.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Parker Alex",
@@ -1276,7 +1476,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/156.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/156.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Parker Liam",
@@ -1284,7 +1485,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/157.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/157.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     },
     {
       name: "Parker Uma",
@@ -1292,7 +1494,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health", "Emergency"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/158.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/158.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Parker Quinn",
@@ -1300,7 +1503,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/159.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/159.jpg",
+      specialities: ["Cosmetic Dermatology", "Pediatric Dermatology"]
     },
     {
       name: "Parker Zane",
@@ -1308,7 +1512,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/160.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/160.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     }
   ],
   q: [
@@ -1318,7 +1523,11 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/161.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/161.jpg",
+      specialities: [
+        "Orthopedic Physical Therapy",
+        "Geriatric Physical Therapy"
+      ]
     },
     {
       name: "Quincy Xena",
@@ -1326,7 +1535,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/162.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/162.jpg",
+      specialities: ["Cardiac Electrophysiology", "Interventional Cardiology"]
     },
     {
       name: "Quincy Toby",
@@ -1334,7 +1544,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/163.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/163.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     },
     {
       name: "Quincy Xena",
@@ -1342,7 +1553,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/164.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/164.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     },
     {
       name: "Quincy Riley",
@@ -1350,7 +1562,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/165.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/165.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Quincy Drew",
@@ -1358,7 +1571,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["Telemedicine", "General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/166.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/166.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Quincy Noah",
@@ -1366,7 +1580,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["General health"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/167.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/167.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Quincy Casey",
@@ -1374,7 +1589,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/168.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/168.jpg",
+      specialities: ["Cardiac Electrophysiology", "Interventional Cardiology"]
     },
     {
       name: "Quincy Finn",
@@ -1382,7 +1598,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/169.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/169.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Quincy Zane",
@@ -1390,7 +1607,11 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/170.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/170.jpg",
+      specialities: [
+        "Orthopedic Physical Therapy",
+        "Geriatric Physical Therapy"
+      ]
     }
   ],
   r: [
@@ -1400,7 +1621,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/171.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/171.jpg",
+      specialities: ["Pediatric Nursing", "Emergency Care"]
     },
     {
       name: "Reed Zane",
@@ -1408,7 +1630,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/172.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/172.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Reed Xena",
@@ -1416,7 +1639,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Emergency"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/173.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/173.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Reed Kai",
@@ -1424,7 +1648,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/174.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/174.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Reed Zane",
@@ -1432,7 +1657,11 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/175.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/175.jpg",
+      specialities: [
+        "Orthopedic Physical Therapy",
+        "Geriatric Physical Therapy"
+      ]
     },
     {
       name: "Reed Peyton",
@@ -1440,7 +1669,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/176.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/176.jpg",
+      specialities: ["Pediatric Nursing", "Emergency Care"]
     },
     {
       name: "Reed Harper",
@@ -1448,7 +1678,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/177.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/177.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     },
     {
       name: "Reed Zane",
@@ -1456,7 +1687,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health", "Emergency"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/178.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/178.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Reed Yara",
@@ -1464,7 +1696,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/179.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/179.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     },
     {
       name: "Reed Riley",
@@ -1472,7 +1705,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/180.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/180.jpg",
+      specialities: ["Pediatric Nursing", "Emergency Care"]
     }
   ],
   s: [
@@ -1482,7 +1716,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/181.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/181.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Shaw Noah",
@@ -1490,7 +1725,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/182.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/182.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Shaw Finn",
@@ -1498,7 +1734,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/183.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/183.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Shaw Xena",
@@ -1506,7 +1743,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/184.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/184.jpg",
+      specialities: ["Cardiac Electrophysiology", "Interventional Cardiology"]
     },
     {
       name: "Shaw Xena",
@@ -1514,7 +1752,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Emergency"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/185.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/185.jpg",
+      specialities: ["Pediatric Nursing", "Emergency Care"]
     },
     {
       name: "Shaw Zane",
@@ -1522,7 +1761,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/186.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/186.jpg",
+      specialities: ["General Pediatrics", "Neonatology"]
     },
     {
       name: "Shaw Mia",
@@ -1530,7 +1770,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/187.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/187.jpg",
+      specialities: ["General Pediatrics", "Neonatology"]
     },
     {
       name: "Shaw Harper",
@@ -1538,7 +1779,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/188.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/188.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     },
     {
       name: "Shaw Finn",
@@ -1546,7 +1788,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/189.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/189.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Shaw Zane",
@@ -1554,7 +1797,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health", "Emergency"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/190.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/190.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     }
   ],
   t: [
@@ -1564,7 +1808,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/191.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/191.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     },
     {
       name: "Turner Zane",
@@ -1572,7 +1817,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/192.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/192.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Turner Grace",
@@ -1580,7 +1826,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Emergency"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/193.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/193.jpg",
+      specialities: ["Cosmetic Dermatology", "Pediatric Dermatology"]
     },
     {
       name: "Turner Yara",
@@ -1588,7 +1835,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/194.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/194.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Turner Quinn",
@@ -1596,7 +1844,11 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/195.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/195.jpg",
+      specialities: [
+        "Orthopedic Physical Therapy",
+        "Geriatric Physical Therapy"
+      ]
     },
     {
       name: "Turner Harper",
@@ -1604,7 +1856,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/196.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/196.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     },
     {
       name: "Turner Will",
@@ -1612,7 +1865,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/197.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/197.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Turner Peyton",
@@ -1620,7 +1874,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/198.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/198.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Turner Alex",
@@ -1628,7 +1883,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/199.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/199.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Turner Liam",
@@ -1636,7 +1892,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/200.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/200.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     }
   ],
   u: [
@@ -1646,7 +1903,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/201.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/201.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Underwood Riley",
@@ -1654,7 +1912,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/202.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/202.jpg",
+      specialities: ["Cosmetic Dermatology", "Pediatric Dermatology"]
     },
     {
       name: "Underwood Casey",
@@ -1662,7 +1921,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/203.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/203.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Underwood Toby",
@@ -1670,7 +1930,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/204.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/204.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     },
     {
       name: "Underwood Sage",
@@ -1678,7 +1939,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/205.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/205.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Underwood Zane",
@@ -1686,7 +1948,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/206.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/206.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Underwood Peyton",
@@ -1694,7 +1957,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/207.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/207.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     },
     {
       name: "Underwood Quinn",
@@ -1702,7 +1966,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/208.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/208.jpg",
+      specialities: ["Cosmetic Dermatology", "Pediatric Dermatology"]
     },
     {
       name: "Underwood Harper",
@@ -1710,7 +1975,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Emergency"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/209.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/209.jpg",
+      specialities: ["General Pediatrics", "Neonatology"]
     },
     {
       name: "Underwood Evan",
@@ -1718,7 +1984,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/210.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/210.jpg",
+      specialities: ["Cosmetic Dermatology", "Pediatric Dermatology"]
     }
   ],
   v: [
@@ -1728,7 +1995,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/211.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/211.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Vaughn Grace",
@@ -1736,7 +2004,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/212.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/212.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     },
     {
       name: "Vaughn Noah",
@@ -1744,7 +2013,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Emergency"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/213.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/213.jpg",
+      specialities: ["Cosmetic Dermatology", "Pediatric Dermatology"]
     },
     {
       name: "Vaughn Zane",
@@ -1752,7 +2022,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/214.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/214.jpg",
+      specialities: ["Cosmetic Dermatology", "Pediatric Dermatology"]
     },
     {
       name: "Vaughn Mia",
@@ -1760,7 +2031,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/215.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/215.jpg",
+      specialities: ["Cosmetic Dermatology", "Pediatric Dermatology"]
     },
     {
       name: "Vaughn Riley",
@@ -1768,7 +2040,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/216.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/216.jpg",
+      specialities: ["General Pediatrics", "Neonatology"]
     },
     {
       name: "Vaughn Toby",
@@ -1776,7 +2049,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/217.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/217.jpg",
+      specialities: ["Cardiac Electrophysiology", "Interventional Cardiology"]
     },
     {
       name: "Vaughn Zane",
@@ -1784,7 +2058,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/218.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/218.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     },
     {
       name: "Vaughn Will",
@@ -1792,7 +2067,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/219.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/219.jpg",
+      specialities: ["Cardiac Electrophysiology", "Interventional Cardiology"]
     },
     {
       name: "Vaughn Mia",
@@ -1800,7 +2076,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/220.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/220.jpg",
+      specialities: ["Pediatric Nursing", "Emergency Care"]
     }
   ],
   w: [
@@ -1810,7 +2087,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/221.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/221.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "White Harper",
@@ -1818,7 +2096,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health", "Emergency"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/222.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/222.jpg",
+      specialities: ["Pediatric Nursing", "Emergency Care"]
     },
     {
       name: "White Sage",
@@ -1826,7 +2105,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/223.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/223.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "White Uma",
@@ -1834,7 +2114,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/224.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/224.jpg",
+      specialities: ["General Pediatrics", "Neonatology"]
     },
     {
       name: "White Toby",
@@ -1842,7 +2123,11 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Emergency"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/225.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/225.jpg",
+      specialities: [
+        "Orthopedic Physical Therapy",
+        "Geriatric Physical Therapy"
+      ]
     },
     {
       name: "White Casey",
@@ -1850,7 +2135,11 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/226.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/226.jpg",
+      specialities: [
+        "Orthopedic Physical Therapy",
+        "Geriatric Physical Therapy"
+      ]
     },
     {
       name: "White Vera",
@@ -1858,7 +2147,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/227.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/227.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "White Harper",
@@ -1866,7 +2156,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/228.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/228.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "White Quinn",
@@ -1874,7 +2165,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Emergency"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/229.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/229.jpg",
+      specialities: ["Cosmetic Dermatology", "Pediatric Dermatology"]
     },
     {
       name: "White Grace",
@@ -1882,7 +2174,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["Telemedicine", "General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/230.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/230.jpg",
+      specialities: ["Cardiac Electrophysiology", "Interventional Cardiology"]
     }
   ],
   x: [
@@ -1892,7 +2185,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/231.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/231.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     },
     {
       name: "Xavier Liam",
@@ -1900,7 +2194,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/232.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/232.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Xavier Owen",
@@ -1908,7 +2203,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/233.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/233.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     },
     {
       name: "Xavier Vera",
@@ -1916,7 +2212,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/234.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/234.jpg",
+      specialities: ["Pediatric Nursing", "Emergency Care"]
     },
     {
       name: "Xavier Blake",
@@ -1924,7 +2221,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/235.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/235.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Xavier Harper",
@@ -1932,7 +2230,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/236.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/236.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Xavier Finn",
@@ -1940,7 +2239,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/237.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/237.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Xavier Yara",
@@ -1948,7 +2248,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/238.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/238.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Xavier Harper",
@@ -1956,7 +2257,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/239.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/239.jpg",
+      specialities: ["Cardiac Electrophysiology", "Interventional Cardiology"]
     },
     {
       name: "Xavier Vera",
@@ -1964,7 +2266,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/240.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/240.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     }
   ],
   y: [
@@ -1974,7 +2277,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/241.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/241.jpg",
+      specialities: ["Cosmetic Dermatology", "Pediatric Dermatology"]
     },
     {
       name: "Young Harper",
@@ -1982,7 +2286,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/242.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/242.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Young Evan",
@@ -1990,7 +2295,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/243.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/243.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Young Alex",
@@ -1998,7 +2304,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/244.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/244.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     },
     {
       name: "Young Uma",
@@ -2006,7 +2313,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/245.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/245.jpg",
+      specialities: ["Child Psychiatry", "Addiction Psychiatry"]
     },
     {
       name: "Young Will",
@@ -2014,7 +2322,11 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/246.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/246.jpg",
+      specialities: [
+        "Orthopedic Physical Therapy",
+        "Geriatric Physical Therapy"
+      ]
     },
     {
       name: "Young Owen",
@@ -2022,7 +2334,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/247.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/247.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Young Owen",
@@ -2030,7 +2343,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/248.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/248.jpg",
+      specialities: ["General Pediatrics", "Neonatology"]
     },
     {
       name: "Young Liam",
@@ -2038,7 +2352,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Telemedicine"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/249.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/249.jpg",
+      specialities: ["General Medicine", "Internal Medicine"]
     },
     {
       name: "Young Toby",
@@ -2046,7 +2361,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health", "Emergency"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/250.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/250.jpg",
+      specialities: ["Pediatric Nursing", "Emergency Care"]
     }
   ],
   z: [
@@ -2056,7 +2372,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/251.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/251.jpg",
+      specialities: ["Pediatric Nursing", "Emergency Care"]
     },
     {
       name: "Zimmer Noah",
@@ -2064,7 +2381,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/252.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/252.jpg",
+      specialities: ["Pediatric Surgery", "Trauma Surgery"]
     },
     {
       name: "Zimmer Yara",
@@ -2072,7 +2390,8 @@ const providers = {
       location: "New York, United States",
       consult_types: ["Emergency"],
       timezone: "-5",
-      avatar: "https://randomuser.me/api/portraits/men/253.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/253.jpg",
+      specialities: ["Oncology", "Radiation Oncology"]
     },
     {
       name: "Zimmer Kai",
@@ -2080,7 +2399,8 @@ const providers = {
       location: "Lagos, Nigeria",
       consult_types: ["General health"],
       timezone: "+1",
-      avatar: "https://randomuser.me/api/portraits/women/254.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/254.jpg",
+      specialities: ["Musculoskeletal Radiology", "Neuroradiology"]
     },
     {
       name: "Zimmer Uma",
@@ -2088,7 +2408,8 @@ const providers = {
       location: "Accra, Ghana",
       consult_types: ["Telemedicine", "Emergency"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/men/255.jpg"
+      avatar: "https://randomuser.me/api/portraits/men/255.jpg",
+      specialities: ["General Pediatrics", "Neonatology"]
     },
     {
       name: "Zimmer Quinn",
@@ -2096,7 +2417,8 @@ const providers = {
       location: "London, United Kingdom",
       consult_types: ["General health", "Telemedicine"],
       timezone: "+0",
-      avatar: "https://randomuser.me/api/portraits/women/256.jpg"
+      avatar: "https://randomuser.me/api/portraits/women/256.jpg",
+      specialities: ["Cosmetic Dermatology", "Pediatric Dermatology"]
     }
   ]
 };

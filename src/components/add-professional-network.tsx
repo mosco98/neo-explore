@@ -3,18 +3,21 @@
 import { Send, UserPlus } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import Image from "next/image";
+import { DetailType } from "./address-book";
 
 interface AddProfessionalNetworkProps {
   isOpen: boolean;
   onClose: () => void;
+  selectedDetails: DetailType | undefined;
 }
 
 const AddProfessionalNetwork = ({
   isOpen,
-  onClose
+  onClose,
+  selectedDetails
 }: AddProfessionalNetworkProps) => {
   return (
-    <div className="flex-1 gap-20 pl-[92px] pt-12">
+    <div className="flex-1 gap-20 pl-[42px] pt-12">
       <div className="inline-flex items-center gap-2.5 uppercase font-mono">
         <motion.div
           layoutId="add-icon-box"
@@ -37,9 +40,9 @@ const AddProfessionalNetwork = ({
       </div>
 
       <AnimatePresence>
-        {isOpen && (
+        {isOpen && selectedDetails && (
           <motion.div
-            className="mt-[62px]"
+            className="mt-[62px] flex"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { delay: 0.9 } }}
             exit={{ opacity: 0 }}
@@ -52,7 +55,7 @@ const AddProfessionalNetwork = ({
               <div className="relative">
                 <div className="size-12 rounded-full relative overflow-hidden">
                   <Image
-                    src={"/provider.webp"}
+                    src={selectedDetails.avatar}
                     fill
                     alt="provider"
                     className="object-cover object-top"
@@ -61,28 +64,29 @@ const AddProfessionalNetwork = ({
 
                 <div className="mt-2.5">
                   <h2 className="text-sm font-semibold line-clamp-1">
-                    Amina Chinyere - Thomp...
+                    {selectedDetails.name}
                   </h2>
                   <p className="mt-px text-[#C5C5C5] text-xs">
-                    Occupational Therapist
+                    {selectedDetails.role}
                   </p>
 
                   <div className="flex items-center flex-wrap gap-1 mt-2">
-                    <div className="h-[18px] px-2 bg-[#D1D1D1] flex items-center justify-center text-[8px] text-xs font-mono text-[#0A0A0A] uppercase font-medium">
-                      Endocrinology
-                    </div>
-
-                    <div className="h-[18px] px-2 bg-[#D1D1D1] flex items-center justify-center text-[8px] text-xs font-mono text-[#0A0A0A] uppercase font-medium">
-                      Diabetology
-                    </div>
+                    {selectedDetails.specialities.map((spec, index) => (
+                      <div
+                        key={index}
+                        className="h-[18px] px-2 bg-[#D1D1D1] flex items-center justify-center text-[8px] text-xs font-mono text-[#0A0A0A] uppercase font-medium"
+                      >
+                        {spec}
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
             </motion.div>
 
-            <div className="w-[562px] max-w-full">
+            <div className="w-[562px] max-w-full border-[0.68px] border-[#333]">
               <textarea
-                className="border-[0.68px] border-[#333] resize-none outline-none pl-[42px] pt-[37px] placeholder:text-[#909090] text-sm w-full h-[182px] mb-0"
+                className="resize-none outline-none pl-[42px] pt-[37px] placeholder:text-[#909090] text-sm w-full h-[182px] mb-0"
                 placeholder="Add a personal note"
               />
 

@@ -16,6 +16,7 @@ import Image from "next/image";
 import { useRef, useState } from "react";
 import AddProfessionalNetwork from "./add-professional-network";
 import ContactList from "./contacts-list";
+import SendMail from "./mail";
 
 export type DetailType = {
   name: string;
@@ -24,6 +25,7 @@ export type DetailType = {
   consult_types: string[];
   timezone: string;
   avatar: string;
+  specialities: string[];
 };
 
 const ALPHA_NUMERIC = [
@@ -58,6 +60,8 @@ const ALPHA_NUMERIC = [
 
 const AddressBook = () => {
   const [isAddOpen, setIsAddOpen] = useState(false);
+  const [isMailOpen, setIsMailOpen] = useState(false);
+
   const [activeScreen, setActiveScreen] = useState<
     "default" | "keypad" | "filter"
   >("default");
@@ -75,11 +79,22 @@ const AddressBook = () => {
     }
   };
 
+  if (isMailOpen) {
+    return (
+      <SendMail
+        isOpen={isMailOpen}
+        onClose={() => setIsMailOpen(false)}
+        selectedDetails={selectedDetails}
+      />
+    );
+  }
+
   if (isAddOpen) {
     return (
       <AddProfessionalNetwork
         isOpen={isAddOpen}
         onClose={() => setIsAddOpen(false)}
+        selectedDetails={selectedDetails}
       />
     );
   }
@@ -324,13 +339,14 @@ const AddressBook = () => {
                       </p>
 
                       <div className="flex items-center flex-wrap gap-1 mt-2">
-                        <div className="h-[18px] px-2 bg-[#D1D1D1] flex items-center justify-center text-[8px] text-xs font-mono text-[#0A0A0A] uppercase font-medium">
-                          Endocrinology
-                        </div>
-
-                        <div className="h-[18px] px-2 bg-[#D1D1D1] flex items-center justify-center text-[8px] text-xs font-mono text-[#0A0A0A] uppercase font-medium">
-                          Diabetology
-                        </div>
+                        {selectedDetails.specialities.map((spec, index) => (
+                          <div
+                            key={index}
+                            className="h-[18px] px-2 bg-[#D1D1D1] flex items-center justify-center text-[8px] text-xs font-mono text-[#0A0A0A] uppercase font-medium"
+                          >
+                            {spec}
+                          </div>
+                        ))}
                       </div>
                     </div>
 
@@ -402,9 +418,14 @@ const AddressBook = () => {
                   transition={{ delay: 0.5 }}
                   className="flex items-center justify-between"
                 >
-                  <button className="size-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-black transition">
+                  <motion.button
+                    layoutId="mail-icon-box"
+                    className="size-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-black transition"
+                    transition={{ duration: 0 }}
+                    onClick={() => setIsMailOpen(true)}
+                  >
                     <Mail className="size-4" />
-                  </button>
+                  </motion.button>
 
                   <button className="size-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-black transition">
                     <MessageCircle className="size-4" />
