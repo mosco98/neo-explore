@@ -70,6 +70,10 @@ const AddressBook = () => {
     DetailType | undefined
   >(undefined);
 
+  const [selectedType, setSelectedType] = useState<
+    "providers" | "clinics" | "hospitals" | "diagnostic-centres" | "pharmacies"
+  >("providers");
+
   const sectionRefs = useRef<{ [key: string]: HTMLElement | null }>({});
 
   const scrollToLetter = (letter: string) => {
@@ -125,6 +129,7 @@ const AddressBook = () => {
                 setActiveLetter={(letter) => setActiveLetter(letter)}
                 setSelectedDetails={setSelectedDetails}
                 sectionRefs={sectionRefs}
+                selectedType={selectedType}
               />
             </motion.div>
           )}
@@ -156,26 +161,38 @@ const AddressBook = () => {
                   <div>
                     <ul className="space-y-3">
                       <li>
-                        <button>PROVIDERS</button>
+                        <button onClick={() => setSelectedType("providers")}>
+                          PROVIDERS
+                        </button>
                       </li>
 
                       <li>
-                        <button>CLINICS</button>
+                        <button onClick={() => setSelectedType("clinics")}>
+                          CLINICS
+                        </button>
                       </li>
 
                       <li>
-                        <button>HOSPITALS</button>
+                        <button onClick={() => setSelectedType("hospitals")}>
+                          HOSPITALS
+                        </button>
                       </li>
 
                       <li>
-                        <button>DIAGNOSTIC CENTRES</button>
+                        <button
+                          onClick={() => setSelectedType("diagnostic-centres")}
+                        >
+                          DIAGNOSTIC CENTRES
+                        </button>
                       </li>
 
                       <li>
-                        <button>PHARMACIES</button>
+                        <button onClick={() => setSelectedType("pharmacies")}>
+                          PHARMACIES
+                        </button>
                       </li>
 
-                      <li>
+                      {/* <li>
                         <button>PATIENTS</button>
                       </li>
 
@@ -185,7 +202,7 @@ const AddressBook = () => {
 
                       <li>
                         <button>OTHERS</button>
-                      </li>
+                      </li> */}
 
                       {/* <li className="text-[#F05211]">
                         <button
@@ -307,6 +324,16 @@ const AddressBook = () => {
           <>
             <div className="flex-1 flex flex-col justify-between">
               <div>
+                <div className="mb-6">
+                  <button
+                    onClick={() => {
+                      setSelectedDetails(undefined);
+                    }}
+                  >
+                    <ArrowLeft className="size-4" />
+                  </button>
+                </div>
+
                 <div className="relative">
                   <div className="size-12 rounded-full relative overflow-hidden">
                     <Image
@@ -353,7 +380,8 @@ const AddressBook = () => {
                     <div className="mt-10 space-y-4">
                       <div>
                         <p className="text-[#C5C5C5] uppercase text-[10px] !font-mono">
-                          Location [1]
+                          Location [
+                          {selectedDetails.location.split(", ").length}]
                         </p>
 
                         <div className="text-xs mt-1.5 space-y-px">

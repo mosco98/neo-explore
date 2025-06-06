@@ -7,14 +7,14 @@ const TestData = {
 
 export { TestData };
 
-const providers = {
-  a: [
-    {
-      name: "Abbott Xena",
-      role: "Surgeon",
-      location: "London, United Kingdom",
-      consult_types: ["Telemedicine", "General health", "Consultations"],
-      timezone: "+1"
-    }
-  ]
-};
+// const providers = {
+//   a: [
+//     {
+//       name: "Abbott Xena",
+//       role: "Surgeon",
+//       location: "London, United Kingdom",
+//       consult_types: ["Telemedicine", "General health", "Consultations"],
+//       timezone: "+1"
+//     }
+//   ]
+// };

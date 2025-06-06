@@ -1,5 +1,9 @@
 "use client";
 
+import { clinics } from "@/lib/clinics";
+import { diagnosticCentres } from "@/lib/diagnostic-centres";
+import { hospitals } from "@/lib/hospitals";
+import { pharmacies } from "@/lib/pharmacies";
 import { providers } from "@/lib/providers";
 import { RefObject, useEffect } from "react";
 import { DetailType } from "./address-book";
@@ -10,14 +14,31 @@ interface ContactListProps {
   sectionRefs: RefObject<{
     [key: string]: HTMLElement | null;
   }>;
+  selectedType:
+    | "providers"
+    | "clinics"
+    | "hospitals"
+    | "diagnostic-centres"
+    | "pharmacies";
 }
+
+const contactData = {
+  providers,
+  clinics,
+  hospitals,
+  "diagnostic-centres": diagnosticCentres,
+  pharmacies: pharmacies
+};
 
 const ContactList = ({
   setActiveLetter,
   setSelectedDetails,
-  sectionRefs
+  sectionRefs,
+  selectedType
 }: ContactListProps) => {
   // const sectionRefs = useRef<{ [key: string]: HTMLElement | null }>({});
+
+  const data = contactData[selectedType];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -40,6 +61,7 @@ const ContactList = ({
     });
 
     return () => observer.disconnect();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleOnMouseOver = (detail: DetailType) => {
@@ -48,7 +70,7 @@ const ContactList = ({
 
   return (
     <>
-      {Object.entries(providers).map(([letter, contacts]) => (
+      {Object.entries(data).map(([letter, contacts]) => (
         <section
           key={letter}
           ref={(el) => {

@@ -9,6 +9,12 @@ const nextConfig: NextConfig = {
         hostname: "randomuser.me",
         port: "",
         pathname: "/**"
+      },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        port: "",
+        pathname: "/**"
       }
     ]
   }
