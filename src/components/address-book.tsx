@@ -68,7 +68,7 @@ const AddressBook = () => {
   const [activeLetter, setActiveLetter] = useState("");
   const [selectedDetails, setSelectedDetails] = useState<
     DetailType | undefined
-  >(undefined);
+  >();
 
   const [selectedType, setSelectedType] = useState<
     "providers" | "clinics" | "hospitals" | "diagnostic-centres" | "pharmacies"
@@ -103,6 +103,20 @@ const AddressBook = () => {
     );
   }
 
+  const handleSelectType = (
+    type:
+      | "providers"
+      | "clinics"
+      | "hospitals"
+      | "diagnostic-centres"
+      | "pharmacies"
+  ) => {
+    setSelectedType(type);
+    setActiveScreen("default");
+    setActiveLetter("A");
+    setSelectedDetails(undefined);
+  };
+
   return (
     <div className="flex flex-1 gap-[45px] pt-[45px] pb-10">
       <div className="flex-1 pb-[64px]">
@@ -110,7 +124,9 @@ const AddressBook = () => {
           <div className="flex items-center gap-2">
             <div className="size-2.5 bg-black"></div>
 
-            <p className="font-mono">Providers</p>
+            <p className="font-mono uppercase">
+              {selectedType.split("-").join(" ")}
+            </p>
           </div>
 
           <div className="text-[#909090]">letter {activeLetter}</div>
@@ -161,33 +177,33 @@ const AddressBook = () => {
                   <div>
                     <ul className="space-y-3">
                       <li>
-                        <button onClick={() => setSelectedType("providers")}>
+                        <button onClick={() => handleSelectType("providers")}>
                           PROVIDERS
                         </button>
                       </li>
 
                       <li>
-                        <button onClick={() => setSelectedType("clinics")}>
+                        <button onClick={() => handleSelectType("clinics")}>
                           CLINICS
                         </button>
                       </li>
 
                       <li>
-                        <button onClick={() => setSelectedType("hospitals")}>
+                        <button onClick={() => handleSelectType("hospitals")}>
                           HOSPITALS
                         </button>
                       </li>
 
                       <li>
                         <button
-                          onClick={() => setSelectedType("diagnostic-centres")}
+                          onClick={() => handleSelectType("diagnostic-centres")}
                         >
                           DIAGNOSTIC CENTRES
                         </button>
                       </li>
 
                       <li>
-                        <button onClick={() => setSelectedType("pharmacies")}>
+                        <button onClick={() => handleSelectType("pharmacies")}>
                           PHARMACIES
                         </button>
                       </li>

@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Logo from "./logo";
+import Menu from "./menu";
 
 const Navbar = () => {
   return (
-    <nav className="fixed w-full bg-background py-6">
+    <nav className="fixed w-full bg-background py-6 z-[999999999999]">
       <div className="container flex items-center justify-between">
         <Link href={"/"}>
           <Logo />
@@ -63,7 +64,7 @@ const Navbar = () => {
             </svg>
           </button>
 
-          <button className="uppercase font-mono font-medium">[ Menu ]</button>
+          <Menu />
         </div>
       </div>
     </nav>

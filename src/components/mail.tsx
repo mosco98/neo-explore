@@ -1,10 +1,10 @@
 "use client";
 
-import { Mail, Minimize2, Paperclip, Plus, Send, X } from "lucide-react";
+import { Mail, Minimize2, Paperclip, Send, X } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
-import Image from "next/image";
 import { DetailType } from "./address-book";
 import PDF from "./icons/pdf";
+import RecipientInput from "./recipient-input";
 import RichTextEditor from "./rich-text";
 import { Checkbox } from "./ui/checkbox";
 
@@ -57,28 +57,7 @@ const SendMail = ({ isOpen, onClose, selectedDetails }: SendMailProps) => {
             <div className="border-t border-[#C5C5C5] py-[14px] flex gap-[35px]">
               <p className="text-sm text-[#909090] mt-2">To</p>
 
-              <div className="flex items-center gap-2 flex-wrap">
-                <div className="h-8 px-2 flex items-center gap-2 bg-[#F4F5F6]">
-                  <div className="size-8 rounded-full relative overflow-hidden">
-                    <Image
-                      src={"https://randomuser.me/api/portraits/women/70.jpg"}
-                      className="object-cover"
-                      fill
-                      alt="Provider"
-                    />
-                  </div>
-
-                  <p className="font-semibold">Sam Okafor</p>
-
-                  <button>
-                    <X className="size-4 text-[#98A2B3]" />
-                  </button>
-                </div>
-
-                <button className="size-8 flex items-center justify-center border border-[#F4F5F6] hover:bg-[#F4F5F6] transition">
-                  <Plus className="size-5" />
-                </button>
-              </div>
+              <RecipientInput selectedRecipient={selectedDetails} />
             </div>
 
             <div className="border-t border-[#C5C5C5] py-[14px] flex gap-[35px]">
